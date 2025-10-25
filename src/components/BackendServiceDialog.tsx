@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Progress } from '@/components/ui/progress'
 import { 
-  Activity, 
+  ArrowClockwise, 
   Code, 
   ChartLine, 
   Terminal,
@@ -187,7 +187,7 @@ export function BackendServiceDialog({ service, open, onOpenChange }: BackendSer
               <h3 className="font-semibold mb-3">Quick Actions</h3>
               <div className="flex gap-2">
                 <Button size="sm" variant="outline">
-                  <Activity size={14} className="mr-2" />
+                  <ArrowClockwise size={14} className="mr-2" />
                   Restart Service
                 </Button>
                 <Button size="sm" variant="outline">

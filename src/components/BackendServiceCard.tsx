@@ -3,7 +3,6 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
 import { 
-  Activity, 
   Database, 
   TrendUp, 
   Clock,
@@ -99,7 +98,7 @@ export function BackendServiceCard({ service, onClick }: BackendServiceCardProps
           <div>
             <div className="text-muted-foreground text-xs mb-1">Connections</div>
             <div className="font-mono font-semibold flex items-center gap-1">
-              <Activity size={14} className="text-accent" />
+              <Database size={14} className="text-accent" />
               {service.activeConnections}
             </div>
           </div>
