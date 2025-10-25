@@ -1,12 +1,11 @@
 import { useEffect, useState, useCallback } from 'react'
-import { useKV } from '@github/spark/hooks'
+import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { Toaster, toast } from 'sonner'
 import { 
   ChartLine, 
-  Activity, 
   Bell, 
   CloudArrowUp, 
   Lightbulb,
@@ -42,9 +41,9 @@ import {
 import type { SystemEvent, MetricData, Alert as AlertType, BackendService } from '@/lib/types'
 
 function App() {
-  const [events, setEvents] = useKV<SystemEvent[]>('system-events', [])
+  const [events, setEvents] = useLocalStorage<SystemEvent[]>('system-events', [])
   const [metrics, setMetrics] = useState<MetricData[]>([])
-  const [alerts, setAlerts] = useKV<AlertType[]>('system-alerts', [])
+  const [alerts, setAlerts] = useLocalStorage<AlertType[]>('system-alerts', [])
   const [integrations] = useState(generateIntegrations())
   const [recommendations] = useState(generateRecommendations())
   const [systemHealth, setSystemHealth] = useState(generateSystemHealth())
@@ -157,9 +156,9 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-primary rounded-lg">
-                <Activity size={24} className="text-primary-foreground" weight="bold" />
+              <div className="p-2 bg-primary rounded-lg">
+                <Brain size={24} className="text-primary-foreground" weight="bold" />
               </div>
-              <div>
                 <h1 className="text-xl font-bold">Digital Exhaust Analytics</h1>
                 <p className="text-xs text-muted-foreground">Real-time System Intelligence Platform</p>
               </div>
@@ -196,10 +195,10 @@ function App() {
               <span className="hidden sm:inline">Overview</span>
             </TabsTrigger>
             <TabsTrigger value="events" className="gap-2">
-              <Activity size={18} />
+            <TabsTrigger value="events" className="gap-2">
+              <Brain size={18} />
               <span className="hidden sm:inline">Events</span>
             </TabsTrigger>
-            <TabsTrigger value="alerts" className="gap-2">
               <Bell size={18} />
               <span className="hidden sm:inline">Alerts</span>
             </TabsTrigger>
