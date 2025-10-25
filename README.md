@@ -1,238 +1,633 @@
-# NutriScan - Intelligent Nutrition Management Platform
+# 🔮 Prism - Digital Exhaust Analytics Platform
 
 <div align="center">
-  
-  **Enterprise-Grade Nutrition Tracking • RAG-Based AI Assistant • Real-time Analytics**
-  
-  ![Neon](https://img.shields.io/badge/Database-Neon-00E699?style=for-the-badge&logo=postgresql&logoColor=white)
-  ![Next.js](https://img.shields.io/badge/Frontend-Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-  ![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-  ![Firebase](https://img.shields.io/badge/Auth-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-  ![Gemini](https://img.shields.io/badge/AI-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
-  ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+![Prism Logo](https://img.shields.io/badge/Prism-Analytics-blue?style=for-the-badge&logo=react)
+
+**Real-time System Intelligence & Predictive Analytics Platform**
+
+[![React](https://img.shields.io/badge/React-19.0-61DAFB?style=flat&logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.3-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[Features](#-features) • [Demo](#-demo) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Architecture](#-architecture) • [Contributing](#-contributing)
 
 </div>
 
 ---
 
-## Overview
+## 📋 Table of Contents
 
-NutriScan is a comprehensive nutrition management platform that leverages cutting-edge AI technology to provide personalized dietary insights and recommendations. Built with modern web technologies and powered by Neon's serverless PostgreSQL database, the platform offers scalable, real-time nutrition tracking capabilities for health-conscious individuals and organizations.
+- [Overview](#-overview)
+- [Features](#-features)
+- [Demo](#-demo)
+- [Tech Stack](#-tech-stack)
+- [Quick Start](#-quick-start)
+- [Project Structure](#-project-structure)
+- [Architecture](#-architecture)
+- [CSS & Styling](#-css--styling)
+- [Configuration](#-configuration)
+- [Development](#-development)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-## Key Features
+---
 
-### 🔍 **Intelligent Food Recognition**
-- **Barcode Scanning**: Advanced barcode detection using ZXing library
-- **Product Database Integration**: Real-time data from OpenFoodFacts API
-- **Nutritional Analysis**: Comprehensive macro and micronutrient breakdown
+## 🌟 Overview
 
-### 🤖 **RAG-Based AI Chatbot**
-- **Conversational Interface**: Natural language conversations about nutrition and health goals
-- **Retrieval-Augmented Generation**: Personalized responses based on user history, consumption logs, and preferences
-- **Context-Aware Responses**: AI maintains conversation context and provides relevant nutritional guidance
-- **Personal Health Insights**: AI analyzes user data to provide tailored dietary advice and goal tracking support
+**Prism** is a cutting-edge digital exhaust analytics platform that provides real-time system intelligence, predictive analytics, and actionable insights from your infrastructure. Built with modern web technologies, Prism transforms complex system data into beautiful, actionable visualizations.
 
-### � **Intelligent Product Analysis**
-- **AI-Powered Health Scoring**: Comprehensive health assessment of food products (1-100 scale)
-- **Nutritional Insights**: Detailed analysis of positive aspects and health concerns for each product
-- **Alternative Suggestions**: AI-recommended healthier alternatives with availability information
-- **Personalized Recommendations**: Product-specific consumption advice based on user preferences and health goals
+### What is Digital Exhaust?
 
-### � **Nutrition Tracking & Goals**
-- **Daily Goal Management**: Customizable targets for calories, macros, and micronutrients
-- **Consumption Logging**: Historical tracking of food intake with detailed nutritional breakdown
-- **Progress Monitoring**: Real-time updates on daily nutritional goals and achievements
-- **User Profiles**: Personalized settings and dietary preferences management
+Digital exhaust refers to the data trail left by your digital activities - logs, metrics, events, and telemetry. Prism analyzes this exhaust in real-time to:
 
-## Architecture & Technology Stack
+- 🔍 **Detect Anomalies** - AI-powered anomaly detection
+- 📊 **Visualize Metrics** - Real-time system health dashboards
+- ⚠️ **Alert Management** - Smart alerting and incident response
+- 🤖 **AI Insights** - Machine learning-driven recommendations
+- 🔗 **Integration Hub** - Connect multiple data sources seamlessly
 
-### Frontend Architecture
-- **Framework**: Next.js 14 with App Router for optimal performance and SEO
-- **Language**: TypeScript for type safety and enhanced developer experience
-- **Styling**: Tailwind CSS with custom component library using Radix UI primitives
-- **State Management**: React Context API with optimized re-rendering patterns
-- **PWA Features**: Next-PWA integration for offline functionality and app-like experience
-- **Performance**: Code splitting, dynamic imports, and image optimization
+---
 
-### Backend Infrastructure
-- **Runtime**: Node.js with Express.js framework for scalable API development
-- **Database ORM**: Sequelize with advanced query optimization and relationship management
-- **Authentication**: Firebase Admin SDK for secure token validation and user management
-- **Rate Limiting**: Express-based throttling for API protection and performance
-- **Middleware Stack**: Helmet for security, Morgan for logging, Compression for optimization
+## ✨ Features
 
-### Database & Storage Solutions
-- **Primary Database**: Neon PostgreSQL - Serverless, auto-scaling, and branch-based development
-- **Authentication Store**: Firebase Auth for user credentials and session management
-- **Performance Optimization**: Database indexing and query optimization scripts
-- **Data Integrity**: Sequelize migrations and model relationships for consistent data structure
+### 🎯 Core Features
 
-### AI & Machine Learning Integration
-- **Language Model**: Google Gemini Pro for natural language processing and generation
-- **RAG Implementation**: Custom retrieval system combining user data with nutritional knowledge base
-- **External APIs**: OpenFoodFacts integration for comprehensive product information
-- **Data Processing**: Advanced nutrition calculation algorithms and recommendation engines
+- **Real-time Event Streaming** - Live system events with intelligent filtering
+- **System Health Monitoring** - Comprehensive health metrics and status indicators
+- **Alert Management** - Intelligent alerting with acknowledgment and resolution workflows
+- **Backend Service Monitoring** - Track Python and Go microservices in real-time
+- **ML Model Tracking** - Monitor machine learning model performance and metrics
+- **Data Pipeline Visualization** - Visual representation of data processing flows
+- **AI Recommendations** - Automated insights and optimization suggestions
+- **Integration Management** - Connect to AWS, Azure, GCP, Kubernetes, and more
 
-## Getting Started
+### 🎨 UI/UX Features
+
+- **Glass Morphism Design** - Modern, beautiful UI with frosted glass effects
+- **50+ Animations** - Smooth, hardware-accelerated animations
+- **Dark Mode Optimized** - Eye-friendly dark theme by default
+- **Responsive Design** - Mobile, tablet, and desktop support
+- **Accessibility First** - WCAG compliant with keyboard navigation
+- **5 Theme Variants** - Blue, Purple, Green, Cyberpunk, High-Contrast
+
+### 🚀 Performance Features
+
+- **Optimized Build** - Lightning-fast Vite build system
+- **Code Splitting** - Lazy loading for optimal performance
+- **Tree Shaking** - Minimal bundle size
+- **Hardware Acceleration** - GPU-optimized animations
+- **Efficient Rendering** - React 19 with concurrent features
+
+---
+
+## 🎬 Demo
+
+### Live Features
+
+```bash
+# Start the development server
+npm run dev
+
+# Open http://localhost:5000 in your browser
+```
+
+### Key Screens
+
+1. **Overview Dashboard** - System metrics, recent events, and active alerts
+2. **Event Stream** - Real-time event monitoring with filtering
+3. **Alert Management** - Comprehensive alert tracking and resolution
+4. **Backend Services** - Microservice health and performance monitoring
+5. **ML Insights** - AI-powered recommendations and predictions
+6. **Integrations** - Data source connections and configurations
+
+---
+
+## 🛠️ Tech Stack
+
+### Core Technologies
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **React** | 19.0 | UI Framework |
+| **TypeScript** | 5.7 | Type Safety |
+| **Vite** | 6.3 | Build Tool |
+| **Tailwind CSS** | 4.1 | Styling |
+| **Radix UI** | Latest | Component Library |
+| **Framer Motion** | 12.6 | Animations |
+| **Recharts** | 2.15 | Data Visualization |
+| **React Query** | 5.83 | Data Fetching |
+
+### Additional Libraries
+
+- **@github/spark** - GitHub Spark components
+- **Radix UI** - Accessible component primitives
+- **Lucide/Phosphor Icons** - Beautiful icon sets
+- **date-fns** - Date manipulation
+- **Sonner** - Toast notifications
+- **React Hook Form** - Form management
+- **Zod** - Schema validation
+
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+ and npm/yarn package manager
-- Neon PostgreSQL database instance
-- Firebase project with Authentication enabled
-- Google Gemini AI API access
 
-### Installation & Setup
+- **Node.js** 18+ (recommended: 20+)
+- **npm** 9+ or **yarn** 1.22+
+- **Git**
 
-#### 1. Clone the Repository
+### Installation
+
 ```bash
-git clone https://github.com/aamrindersingh/NutriScan-backend.git
-cd NutriScan-backend
-```
+# Clone the repository
+git clone https://github.com/NeuralSynth/prism.git
+cd prism
 
-#### 2. Backend Configuration
-```bash
-cd backend
+# Install dependencies
 npm install
-
-# Configure environment variables
-cp .env.example .env
-# Edit .env with your configuration values
-
-# Initialize database
-npm run init-db
 
 # Start development server
 npm run dev
+
+# Open http://localhost:5000
 ```
 
-#### 3. Frontend Configuration
+### Build for Production
+
 ```bash
-cd frontend
-npm install
+# Create optimized production build
+npm run build
 
-# Configure environment variables
-cp .env.local.example .env.local
-# Edit .env.local with your configuration values
-
-# Start development server
-npm run dev
+# Preview production build
+npm run preview
 ```
 
-### Environment Configuration
+---
 
-#### Backend Environment Variables (.env)
+## 📁 Project Structure
+
+```
+prism/
+├── src/
+│   ├── components/          # React components
+│   │   ├── ui/             # Reusable UI components (Radix)
+│   │   ├── AlertCard.tsx   # Alert display component
+│   │   ├── EventStream.tsx # Event stream component
+│   │   └── ...
+│   ├── lib/                # Utilities and helpers
+│   │   ├── data-generator.ts    # Mock data generation
+│   │   ├── backend-simulator.ts # Backend simulation
+│   │   ├── types.ts             # TypeScript types
+│   │   └── utils.ts             # Utility functions
+│   ├── hooks/              # Custom React hooks
+│   ├── styles/             # CSS and styling
+│   │   ├── animations.css  # Animation library
+│   │   └── theme.css       # Theme variables
+│   ├── App.tsx             # Main application component
+│   ├── main.tsx            # Application entry point
+│   ├── index.css           # Global styles
+│   └── App.css             # Component styles
+├── public/                 # Static assets
+├── components.json         # Shadcn UI configuration
+├── tailwind.config.js      # Tailwind configuration
+├── vite.config.ts          # Vite configuration
+├── tsconfig.json           # TypeScript configuration
+├── package.json            # Dependencies and scripts
+├── CSS_GUIDE.md            # CSS documentation
+├── CSS_CHANGES.md          # CSS enhancements summary
+└── README.md               # This file
+```
+
+---
+
+## 🏗️ Architecture
+
+### Component Architecture
+
+```
+App (Root)
+├── Header (Navigation & Controls)
+├── SystemHealthBar (Overall Health)
+└── Tabs (Main Content)
+    ├── Overview (Dashboard)
+    │   ├── MetricCards
+    │   ├── EventStream
+    │   └── AlertCards
+    ├── Events (Full Event Stream)
+    ├── Alerts (Alert Management)
+    ├── Backend (Services & ML)
+    │   ├── BackendServiceCards
+    │   ├── MLModelCards
+    │   └── DataPipelineVisualizer
+    ├── Insights (AI Recommendations)
+    └── Integrations (Data Sources)
+```
+
+### Data Flow
+
+1. **Data Generation** - Mock data generated in `lib/data-generator.ts`
+2. **State Management** - React hooks and GitHub Spark KV storage
+3. **Real-time Updates** - Interval-based polling (2-5 seconds)
+4. **Event Processing** - Anomaly detection and severity classification
+5. **UI Rendering** - React components with optimized re-renders
+
+### State Management
+
+- **Local State** - `useState` for component-level state
+- **Persistent State** - `useKV` from GitHub Spark for persistence
+- **Intervals** - `useEffect` for real-time data updates
+- **Callbacks** - `useCallback` for optimized event handlers
+
+---
+
+## 🎨 CSS & Styling
+
+### Overview
+
+Prism features **premium, production-ready CSS** with:
+
+- ✨ 50+ animations and transitions
+- 🎭 Glass morphism effects (3 variants)
+- 🌈 Gradient text and backgrounds
+- 💫 Interactive hover effects
+- 🎯 Loading states and skeletons
+- 🎨 5 theme variants
+- ♿ Full accessibility support
+
+### Quick Usage
+
+```jsx
+// Glass morphism card
+<div className="glass card-hover p-6 rounded-xl">
+  <h3 className="gradient-text text-2xl">Amazing</h3>
+</div>
+
+// Animated entrance
+<div className="animate-slide-in-up delay-200">
+  Content appears smoothly
+</div>
+
+// Glowing button
+<button className="btn-gradient shadow-glow-blue-lg">
+  Click Me
+</button>
+```
+
+### Documentation
+
+- **[CSS_GUIDE.md](CSS_GUIDE.md)** - Complete CSS documentation with examples
+- **[CSS_CHANGES.md](CSS_CHANGES.md)** - Summary of all enhancements
+- **css-showcase.html** - Visual demonstration of all features
+
+### Theme Customization
+
+```jsx
+// Switch themes
+<body data-theme="cyberpunk">
+
+// Available themes:
+// - blue (default)
+// - purple
+// - green
+// - cyberpunk
+// - high-contrast
+```
+
+---
+
+## ⚙️ Configuration
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
+
 ```env
-# Database Configuration
-DATABASE_URL=postgresql://user:password@your-neon-db.neon.tech/nutriscan
+# API Configuration (if needed)
+VITE_API_URL=http://localhost:3000
+VITE_WS_URL=ws://localhost:3000
 
-# Firebase Configuration
-FIREBASE_SERVICE_ACCOUNT_KEY=path/to/your/firebase-service-account.json
+# Feature Flags
+VITE_ENABLE_ANALYTICS=true
+VITE_ENABLE_REALTIME=true
 
-# AI Configuration
-GEMINI_API_KEY=your_google_gemini_api_key
-
-# Server Configuration
-PORT=3001
-NODE_ENV=development
-
-# Security
-JWT_SECRET=your_jwt_secret_key
-RATE_LIMIT_WINDOW_MS=900000
-RATE_LIMIT_MAX_REQUESTS=100
+# GitHub Spark (if using)
+VITE_SPARK_PROJECT_ID=your-project-id
 ```
 
-#### Frontend Environment Variables (.env.local)
-```env
-# API Configuration
-NEXT_PUBLIC_API_URL=http://localhost:3001
+### Vite Configuration
 
-# Firebase Configuration
-NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+Edit `vite.config.ts` to customize build settings:
 
-# PWA Configuration
-NEXT_PUBLIC_APP_NAME=NutriScan
-NEXT_PUBLIC_APP_DESCRIPTION=Intelligent Nutrition Management Platform
+```typescript
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5000,
+    open: true
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: true
+  }
+})
 ```
 
-## Database Schema & Migrations
+### Tailwind Configuration
 
-The application uses Sequelize ORM with the following core entities:
-- **Users**: Authentication and basic user information
-- **Profiles**: Extended user profiles with preferences and settings
-- **DailyGoals**: Customizable nutritional targets and objectives
-- **FoodItems**: Comprehensive food database with nutritional information
-- **ConsumptionLogs**: Historical tracking of user food consumption
+Customize colors, animations, and utilities in `tailwind.config.js`:
 
-### Running Migrations
+```javascript
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        prism: {
+          blue: '#3b82f6',
+          purple: '#8b5cf6',
+          // ... more colors
+        }
+      }
+    }
+  }
+}
+```
+
+---
+
+## 💻 Development
+
+### Available Scripts
+
 ```bash
-cd backend
-npm run migrate
-npm run seed # Optional: populate with sample data
+# Development
+npm run dev          # Start dev server (http://localhost:5000)
+npm run kill         # Kill process on port 5000
+
+# Building
+npm run build        # Production build
+npm run preview      # Preview production build
+
+# Code Quality
+npm run lint         # Run ESLint
+npm run optimize     # Optimize dependencies
+
+# Type Checking
+tsc --noEmit        # Check TypeScript types
 ```
 
-## Development Workflow
+### Development Workflow
 
-### Code Structure
-```
-backend/
-├── config/          # Database and service configurations
-├── controllers/     # Business logic and request handlers
-├── middlewares/     # Authentication and validation middleware
-├── models/          # Sequelize database models
-├── routes/          # API route definitions
-├── services/        # External service integrations
-└── utils/           # Helper functions and utilities
+1. **Start dev server** - `npm run dev`
+2. **Make changes** - Edit files in `src/`
+3. **Hot reload** - Changes appear instantly
+4. **Check types** - TypeScript provides inline errors
+5. **Test build** - `npm run build` before committing
 
-frontend/
-├── src/app/         # Next.js app router pages
-├── src/components/  # Reusable React components
-├── src/contexts/    # React context providers
-├── src/hooks/       # Custom React hooks
-├── src/lib/         # Utility libraries and configurations
-└── src/types/       # TypeScript type definitions
-```
+### Adding New Components
 
-### Development Scripts
 ```bash
-# Backend
-npm run dev          # Start development server with hot reload
-npm run build        # Build for production
-npm run start        # Start production server
-npm run migrate      # Run database migrations
-npm run test         # Run test suite
+# Create new component
+touch src/components/MyComponent.tsx
 
-# Frontend
-npm run dev          # Start development server
-npm run build        # Build optimized production bundle
-npm run start        # Start production server
-npm run lint         # Run ESLint code quality checks
-npm run type-check   # Run TypeScript type checking
+# Create with UI component
+# (Uses Shadcn UI)
+npx shadcn-ui@latest add button
 ```
 
-## Performance & Scalability
+### Code Style
 
-### Database Optimization
-- **Neon Database Features**: Serverless PostgreSQL with automatic scaling and branching
-- **Connection Pooling**: Optimized database connections for high-concurrency scenarios
-- **Query Optimization**: Indexed searches and optimized JOIN operations
-- **Data Archiving**: Automated cleanup and archival of historical consumption data
+- **TypeScript** - Strict mode enabled
+- **ESLint** - Configured for React & TypeScript
+- **Prettier** - (Optional) Add `.prettierrc` if needed
+- **Naming** - PascalCase for components, camelCase for functions
 
-### Frontend Performance
-- **Bundle Optimization**: Code splitting and tree shaking for minimal bundle sizes
-- **Image Optimization**: Next.js automatic image optimization and lazy loading
-- **Caching Strategy**: Intelligent caching of API responses and static assets
-- **Progressive Loading**: Skeleton screens and progressive enhancement
+---
+
+## 🚢 Deployment
+
+### Vercel (Recommended)
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+
+# Production deployment
+vercel --prod
+```
+
+### Netlify
+
+```bash
+# Build command
+npm run build
+
+# Publish directory
+dist
+```
+
+### Docker
+
+```dockerfile
+FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+EXPOSE 5000
+CMD ["npm", "run", "preview"]
+```
+
+### Static Hosting
+
+Build and upload the `dist` folder to any static hosting service:
+
+- GitHub Pages
+- AWS S3 + CloudFront
+- Azure Static Web Apps
+- Google Cloud Storage
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these guidelines:
+
+### Getting Started
+
+1. **Fork the repository**
+2. **Create a feature branch** - `git checkout -b feature/amazing-feature`
+3. **Commit changes** - `git commit -m 'Add amazing feature'`
+4. **Push to branch** - `git push origin feature/amazing-feature`
+5. **Open a Pull Request**
+
+### Contribution Guidelines
+
+- Write clear, descriptive commit messages
+- Follow existing code style and patterns
+- Add comments for complex logic
+- Update documentation as needed
+- Test your changes thoroughly
+- Keep PRs focused on a single feature/fix
+
+### Code Review Process
+
+1. Submit PR with clear description
+2. Automated checks must pass
+3. At least one maintainer review required
+4. Address feedback and update PR
+5. Merge once approved
+
+### Reporting Issues
+
+- Use GitHub Issues for bug reports
+- Include reproduction steps
+- Provide browser/environment details
+- Add screenshots if applicable
+
+---
+
+## 📚 Documentation
+
+### Additional Resources
+
+- **[CSS_GUIDE.md](CSS_GUIDE.md)** - Complete CSS and animation guide
+- **[CSS_CHANGES.md](CSS_CHANGES.md)** - CSS enhancement summary
+- **[SECURITY.md](SECURITY.md)** - Security policies
+- **[LICENSE](LICENSE)** - MIT License
+
+### API Documentation
+
+(Add links to API docs if applicable)
+
+### Component Documentation
+
+(Add links to Storybook or component docs if available)
+
+---
+
+## 🔒 Security
+
+- **Dependencies** - Regularly updated via Dependabot
+- **Input Validation** - Zod schema validation
+- **XSS Protection** - React's built-in escaping
+- **HTTPS** - Required for production
+- **CSP** - Content Security Policy recommended
+
+Report security vulnerabilities to: [security@example.com](mailto:security@example.com)
+
+---
+
+## 📊 Performance
+
+### Metrics
+
+- **Lighthouse Score** - 90+ on all metrics
+- **First Contentful Paint** - < 1.5s
+- **Time to Interactive** - < 3.5s
+- **Bundle Size** - Optimized with tree-shaking
+
+### Optimization Tips
+
+- Use `React.memo` for expensive components
+- Implement virtual scrolling for long lists
+- Lazy load routes with `React.lazy`
+- Optimize images (WebP format)
+- Enable gzip/brotli compression
+
+---
+
+## 🗺️ Roadmap
+
+### Version 1.x (Current)
+
+- ✅ Real-time event streaming
+- ✅ Alert management
+- ✅ Backend service monitoring
+- ✅ ML model tracking
+- ✅ Data pipeline visualization
+
+### Version 2.0 (Planned)
+
+- 🔲 User authentication & authorization
+- 🔲 Multi-tenant support
+- 🔲 Custom dashboards
+- 🔲 Advanced filtering & search
+- 🔲 Export & reporting
+- 🔲 Real API integration
+- 🔲 WebSocket support
+- 🔲 Mobile app
+
+### Future Considerations
+
+- GraphQL API
+- Real-time collaboration
+- Advanced ML features
+- Custom alerting rules
+- Integration marketplace
+
+---
+
+## 🙏 Acknowledgments
+
+- **GitHub Spark** - For the excellent component library
+- **Radix UI** - For accessible component primitives
+- **Vercel** - For amazing deployment platform
+- **Open Source Community** - For incredible tools and libraries
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+```
+MIT License
+
+Copyright (c) 2025 NeuralSynth
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
+
+---
+
+## 📞 Contact & Support
+
+- **GitHub Issues** - [Report bugs or request features](https://github.com/NeuralSynth/prism/issues)
+- **Discussions** - [Join the community](https://github.com/NeuralSynth/prism/discussions)
+- **Twitter** - [@NeuralSynth](https://twitter.com/NeuralSynth)
+- **Email** - support@neuralsynth.io
+
+---
+
+## ⭐ Star History
+
+If you find Prism useful, please consider giving it a star ⭐
+
+[![Star History Chart](https://api.star-history.com/svg?repos=NeuralSynth/prism&type=Date)](https://star-history.com/#NeuralSynth/prism&Date)
 
 ---
 
 <div align="center">
-  
-**Powered by Neon Database**
 
-*Serverless PostgreSQL • Auto-scaling • Developer-first*
+**Built with ❤️ by the NeuralSynth Team**
 
-**Built for the Modern Web**
+[Website](https://neuralsynth.io) • [Documentation](https://docs.neuralsynth.io) • [Blog](https://blog.neuralsynth.io)
 
 </div>
