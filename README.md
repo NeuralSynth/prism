@@ -123,13 +123,13 @@ npm run dev
 
 ### Additional Libraries
 
-- **@github/spark** - GitHub Spark components
 - **Radix UI** - Accessible component primitives
 - **Lucide/Phosphor Icons** - Beautiful icon sets
 - **date-fns** - Date manipulation
 - **Sonner** - Toast notifications
 - **React Hook Form** - Form management
 - **Zod** - Schema validation
+- **D3.js** - Advanced data visualization
 
 ---
 
@@ -239,7 +239,7 @@ App (Root)
 ### State Management
 
 - **Local State** - `useState` for component-level state
-- **Persistent State** - `useKV` from GitHub Spark for persistence
+- **Persistent State** - Custom KV storage for data persistence
 - **Intervals** - `useEffect` for real-time data updates
 - **Callbacks** - `useCallback` for optimized event handlers
 
@@ -315,8 +315,9 @@ VITE_WS_URL=ws://localhost:3000
 VITE_ENABLE_ANALYTICS=true
 VITE_ENABLE_REALTIME=true
 
-# GitHub Spark (if using)
-VITE_SPARK_PROJECT_ID=your-project-id
+# Application Settings
+VITE_APP_NAME=Prism
+VITE_APP_VERSION=1.0.0
 ```
 
 ### Vite Configuration
@@ -394,9 +395,8 @@ tsc --noEmit        # Check TypeScript types
 # Create new component
 touch src/components/MyComponent.tsx
 
-# Create with UI component
-# (Uses Shadcn UI)
-npx shadcn-ui@latest add button
+# Add UI component from Radix UI
+npm install @radix-ui/react-component-name
 ```
 
 ### Code Style
@@ -578,9 +578,9 @@ Report security vulnerabilities to: [security@example.com](mailto:security@examp
 
 ## 🙏 Acknowledgments
 
-- **GitHub Spark** - For the excellent component library
 - **Radix UI** - For accessible component primitives
 - **Vercel** - For amazing deployment platform
+- **React Team** - For the incredible React framework
 - **Open Source Community** - For incredible tools and libraries
 
 ---
